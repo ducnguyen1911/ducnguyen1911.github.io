@@ -1,0 +1,2 @@
+(function(a){a.modules.loginTooltip=function(){function e(){var a=d.scrollTop()+d.height()>=c.offset().top;b.attr("class",a?"cc-login-absolute":"cc-login-fixed").css({top:a?c.offset().top-b.outerHeight():"auto",bottom:a?"auto":2,left:c.offset().left-c.width()/2-150})}var d=a(window),b=a("#cc-login-tooltip-wrapper"),c=a("#login"),f;e();d.scroll(function(){f&&f();f=a.defer(e,30)});d.resize(function(){e()});b.find(".cc-login-close").click(function(){b.fadeOut(100,function(){b.remove()})});b.on("click",
+function(){a.scrollTo(c);return!1})}})(jimdoGen002);
